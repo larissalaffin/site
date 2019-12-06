@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'BenchNine', sans-serif;
+}
+
+header.topo {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/aaaa.jpg);
+    background-size: cover;
+}
+
+header.topo h1 {
+    font-size: 60px;
+    text-align: center;
+    color: black;
+    padding-top: 320px;
+}
+
+.topo h2 {
+    margin-top: 200px;
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+}
+
+.topo h2 a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: all 0.5s;
+}
+
+.topo h2 a:hover {
+    color: red;
+}
+
+header.topo h3 {
+    font-size: 20pt;
+    text-align: center;
+    color: black;
+}
+
+nav#links ul {
+    width: 900px;
+    height: 22.5px;
+    margin: 0 auto;
+    padding: 75px;
+    text-align: center;
+}
+
+nav#links ul li {
+    display: inline;
+}
+
+nav#links ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: auto;
+    transition: all 0.5s;
+}
+
+nav#links ul li a:hover {
+    color: red;
+}
+
+.boxum {
+    width: 100%;
+    height: 360px;
+    background-color: white;
+    text-align: center;
+    margin: 0px auto 0px auto;
+}
+
+.image {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    background-image: url(../img/ff.png);
+    background-repeat: no-repeat;
+}
+
+.boxum h2 {
+    color: black;
+    padding-top: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.boxum p {
+    font-style: normal;
+    font-size: 17px;
+    color: #111;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.boxdois {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+    margin: 100px auto 0 auto;
+    padding-top: 20px;
+}
+
+.baixo {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/dd.jpg);
+    background-size: cover;
+}
+
+.conteudogaleria {
+    display: flex;
+    width: 50%;
+    margin: 100px auto 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxleft {
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+}
+
+.boxcenter {
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+}
+
+.boxright {
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+}
+
+.box {
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+}
+
+.galeria {
+    margin: 2px;
+}
+
+.desc {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.galeria img {
+    width: 200px;
+    height: 200px;
+}
+
+.galeria img:hover {
+    border-radius: 5px;
+}
+
+.galeria:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.3);
+    transition: all 0.5%;
+    border-radius: 5px;
+}
+
+.boxdois h2 {
+    color: black;
+    font-family: 'BenchNine', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.rodape {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: aliceblue;
+}
+
+.rodape p {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+form {
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    /*autop vai centralizar meu formulário dentro do width*/
+}
+
+input,
+textarea,
+p,
+h1 {
+    font-weight: normal;
+    /*font-weight especifica o peso ou a intensidade da fonte*/
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+legend {
+    padding-top: 50px;
+    color: black;
+    font-weight: bold;
+    /*negrito*/
+    font-size: 25px;
+    font-style: bold;
+    text-align: center;
+    margin-top: 80px;
+}
+
+fieldset {
+    padding-top: 20px;
+    background-color: white;
+    border-color: transparent;
+}
+
+.botao input {
+    background-color: red;
+    border-radius: 18px;
+    color: white
+}
+
+.baixo2 {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/dd.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.boxumm fieldset {
+    height: 500px;
+    width: 600px;
+    margin: 120px auto;
+    background-color: transparent;
+    border-radius: 15px;
+    border-color: none;
+}
+
+.boxdoiss fieldset {
+    height: 200px;
+    width: 350px;
+    margin: 120px auto;
+    border-radius: 15px;
+    border-color: none;
+    background-color: transparent;
+}
+
+.botao input {
+    background-color: red;
+    border-radius: 18px;
+    color: white
+}
+
+.boxumm {
+    display: block;
+    widows: 400px;
+    height: auto;
+    margin: auto;
+}
+
+.boxdoiss {
+    margin: auto;
+}
+
+.conteudoo {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+.baixoo {
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/amarelo.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.baixo3 {
+    overflow: hidden;
+    width: 100%;
+    height: 1000px;
+    background-image: url(../img/aaaa.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+#success-message {
+    text-align: center;
+}
+
+#success-message a {
+    text-decoration: none;
+    color: red;
+    transition: all 0.5s;
+}
+
+#success-message a:hover {
+    color: black;
+}
+
+#back-link {
+    text-align: center;
+}
+
+#back-link a {
+    text-decoration: none;
+    color: #f6f6f6;
+    transition: all 0.5s;
+}
+
+#back-link a:hover {
+    color: #494949;
+}

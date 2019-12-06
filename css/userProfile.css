@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+html {
+
+    background-color: #f6f6f6;
+
+}
+
+
+.main-content {
+
+    display: block;
+    width: 700px;
+    min-height: 500px;
+    margin: 50px auto 0 auto;
+
+}
+
+
+.main-content h1 {
+
+    font-size: 30px;
+    font-family: 'BenchNine', sans-serif;
+    text-align: center;
+
+}
+
+
+.user-name-box {
+
+    display: block;
+    width: 600px;
+    min-height: 100px;
+    float: right;
+
+}
+
+
+.edit-profile-box {
+
+    display: block;
+    width: 100px;
+    height: 40px;
+
+}
+
+
+.edit-profile-box a {
+
+    display: block;
+    text-align: center;
+    color: red;
+    transition: all 0.5s;
+
+}
+
+.edit-profile-box a:hover {
+
+    color: black;
+
+}
+
+
+.database-data {
+
+    display: block;
+    width: 100%;
+    min-height: auto;
+    margin: 100px auto 0 auto;
+
+}
+
+
+.database-data p {
+
+    margin: 40px;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 15px rgba(93, 79, 79, 0.8);
+    font-family: 'BenchNine', sans-serif;
+    line-height: 20px;
+    background-color: #c0c0c0;
+
+}
+
+
+#sair {
+
+    text-align: center;
+    background-color: red;
+    transition: all 0.5s;
+
+}
+
+#sair:hover {
+
+    background-color: #f6f6f6;
+
+}
+
+
+.database-data p a {
+
+    padding: 10px 294px;
+    text-align: center;
+    text-decoration: none;
+    color: #f6f6f6;
+    transition: all 0.5s;
+
+}
+
+.database-data p a:hover {
+
+    color: red;
+
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<?php
+//Conectar–se ao BD
+$dbhost = 'fdb20.awardspace.net';
+$dbuser = '3143144_projeto';
+$dbpassword ='larissa1110';
+$dbname = '3143144_projeto';
+//Efetua a conexão com o BD
+$link = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbname) or die('Error
+connecting to MySQL Server.');
+//Obtém os valores do formulário
+$nome_usuario = $_POST['tNome_Usuario'];
+$email= $_POST['tMail'];
+$senha = $_POST['tSenha'];
+$conf_senha = $_POST['tCSenha'];
+$data_nascimento = $_POST['tNasc'];
+$finalidade_uso = $_POST['tuso'];
+$mensagem = $_POST['tMsg'];
+//Cria a Query SQL
+$query = "INSERT INTO usuario (nome_usuario, email, senha, conf_senha, data_nascimento, finalidade_uso, mensagem) VALUES ('$nome_usuario', '$email', '$senha', '$conf_senha', '$data_nascimento', '$finalidade_uso', '$mensagem'
+)";
+
+$result = mysqli_query( $link, $query ) or die('Error querying database.');
+mysqli_close($link);
+?>
+
+<html>
+    <head>
+      <link rel= "stylesheet" type="text/css" href="../css/layout.css" />
+      <meta charset="utf-8">
+     <title>WEB SITE DE GASTRONOMIA E SAÚDE</title>
+    </head>
+<form action="cadastro.php" method="post">
+
+<body>
+<div class="baixo3"> <!--fundo do site todo-->
+<div class="conteudoo">
+
+
+<div class="boxumm">
+ 
+    <fieldset id="usuario"> <legend> CADASTRE-SE</legend>
+
+      <p>Informações para Cadastro</p>
+  </br>
+      <p>Nome: </br> <input type="text" name="tNome_Usuario" id="cNome" 
+              size="20" 
+              maxlength="30"
+              placeholder="Nome completo" 
+              type="cNone" required=""/> 
+              <!--tamanho da caixa, número de caracteres,dica do que vai dentro da caixa e campo do nome é obrigatório preenchimento--> 
+      </p>
+  </br>
+
+      <p>E-mail:</br><input type="e-mail" name="tMail" id="cMail"
+                size="20" maxlength="40" placeholder="email@com.br"
+                type="cMail" required />  </p> </br>
+
+      <p>Senha:</br><input type="password" name="tSenha" placeholder="Senha" id="password" required></p></br></br>
+      <p>Conf. Senha:</br> <input type="password" name="tCSenha" placeholder="Confirme Senha" id="confirm_password" required></p>
+     </br>
+      <p>Data Nasc.:</br><input type="date" name="tNasc" id="cNasc"> </p>
+     </br>
+     <p>Finalidade de Uso:</br><input type="text" name="tuso" id="cuso"
+            maxlength="20" placeholder="Opções" list="opções" /> </p>
+          <datalist id="opções">
+            <option value="Emagrecer"></option>
+            <option value="Manter alimentação saudável"></option>  
+            <option value="Dieta"></option>
+            <option value=""></option>
+          </datalist>
+      </br>
+       
+       <p> Mensagem: <textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+
+    </br>     <button type="submit" class="pure-button pure-button-primary">Confirmar</button> </p>
+     
+</fieldset>
+</div>
+ </form>
+
+     
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>    
+
+</body>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+    </html>
